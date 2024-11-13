@@ -127,13 +127,13 @@ kubectl apply -f grafana-ingress.yaml --namespace=observability
 kubectl apply -f prometeus-ingress.yaml --namespace=observability
 ```
 - in web browser try to login to kubernetes dashboard https://dashboard.k8s.localhost with token
-## How to user microk8s single node cluster
+## How to use microk8s single node cluster
 - switch namespace
 ```bash
 # default namespace
 kubectl config set-context --current --namespace=default
 ```
 - get current namespace
-```bash
+```
 kubectl config view --minify -o jsonpath='{..namespace}'; echo
 ```
