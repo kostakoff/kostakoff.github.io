@@ -7,4 +7,8 @@
 git config --global user.name "developer"
 git config --global user.name "developer@local"
 ```
-
+- generate ssh key for Git SCM
+```bash
+ssh-keygen -t rsa
+cat ~/.ssh/id_rsa.pub
+```
