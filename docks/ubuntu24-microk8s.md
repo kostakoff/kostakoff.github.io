@@ -44,7 +44,7 @@ kubectl version
 ```bash
 kubectl get secret microk8s-dashboard-token --namespace=kube-system -o jsonpath="{.data.token}" | base64 --decode ; echo
 ```
-#### create ingress for operators
+#### Create ingress for operators
 - create dasboard-ingress.yaml
 ```yaml
 apiVersion: networking.k8s.io/v1
@@ -127,6 +127,22 @@ kubectl apply -f grafana-ingress.yaml --namespace=observability
 kubectl apply -f prometeus-ingress.yaml --namespace=observability
 ```
 - in web browser try to login to kubernetes dashboard https://dashboard.k8s.localhost with token
+
+#### Create self signed certificates issuer
+- create selfsigned-cluster-issuer.yaml
+```yaml
+apiVersion: cert-manager.io/v1
+kind: ClusterIssuer
+metadata:
+  name: selfsigned-cluster-issuer
+spec:
+  selfSigned: {}
+```
+- deploy selfsigned-cluster-issuer
+```bash
+kubectl apply -f selfsigned-cluster-issuer.yaml --namespace=cert-manager
+```
+
 ## How to use microk8s single node cluster
 - switch namespace
 ```bash
@@ -134,6 +150,6 @@ kubectl apply -f prometeus-ingress.yaml --namespace=observability
 kubectl config set-context --current --namespace=default
 ```
 - get current namespace
-```
+```bash
 kubectl config view --minify -o jsonpath='{..namespace}'; echo
 ```
