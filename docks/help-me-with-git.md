@@ -12,3 +12,9 @@ git config --global user.name "developer@local"
 ssh-keygen -t rsa
 cat ~/.ssh/id_rsa.pub
 ```
+
+## quick help
+- change remote url to $new_url
+```bash
+git remote set-url origin $new_url
+```
