@@ -1,5 +1,5 @@
 # Instruction
-## How to prepare microk8s in ubuntu20 for application development
+## How to prepare microk8s in ubuntu24.10 for application development
 
 ### Required resources
 - [X] ubuntu 24.10
@@ -142,14 +142,34 @@ spec:
 ```bash
 kubectl apply -f selfsigned-cluster-issuer.yaml --namespace=cert-manager
 ```
-
-## How to use microk8s single node cluster
-- switch namespace
+#### Create custom application namespace
+- create applicatoins-ns.yaml
+```yaml
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: applications
+```
+- deploy applicatoins namespace
 ```bash
-# default namespace
-kubectl config set-context --current --namespace=default
+kubectl apply -f applicatoins-ns.yaml
+```
+# Documentation
+## How to use microk8s single node cluster
+- switch to applications namespace
+```bash
+kubectl config set-context --current --namespace=applications
 ```
 - get current namespace
 ```bash
 kubectl config view --minify -o jsonpath='{..namespace}'; echo
 ```
+Feel fre to use it!
+
+### Cluster hot links:
+- https://dashboard.k8s.localhost
+- https://grafana.k8s.localhost/?orgId=1 (admin/prom-operator)
+- https://prometheus.k8s.localhost/targets?search=
+
+### Persistent volumes for microk8s 
+- default persistent volumes stogare path: /var/snap/microk8s/common/default-storage
