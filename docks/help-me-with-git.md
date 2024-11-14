@@ -1,6 +1,6 @@
 # Instruction
 
-## git preparation in new OS
+## GIT preparation in new OS
 
 - set user name and developer email (it not should be real name and real email)
 ```bash
@@ -13,8 +13,17 @@ ssh-keygen -t rsa
 cat ~/.ssh/id_rsa.pub
 ```
 
-## quick help
+## GIT hot commands
 - change remote url to $new_url
 ```bash
 git remote set-url origin $new_url
+```
+- combine few commits in to one (where 2 is count of commits)
+```bash
+git rebase -i HEAD~2
+```
+and set `squash` to each combined commit
+- push git push tags (optional force)
+```bash
+git push --force --tags
 ```
