@@ -164,7 +164,7 @@ kubectl config set-context --current --namespace=applications
 ```bash
 kubectl config view --minify -o jsonpath='{..namespace}'; echo
 ```
-Feel fre to use it!
+Feel free to use it!
 
 ### Cluster hot links:
 - https://dashboard.k8s.localhost
