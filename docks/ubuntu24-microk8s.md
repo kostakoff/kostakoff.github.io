@@ -8,6 +8,7 @@
 
 ### Steps
 - prepare ubuntu 24.10 (vm or install to your PC)
+- make sure that you have static local ip for your ubuntu (if ip will change, microk8s become unavailable)
 - install microk8s, kubectl and helm
 ```bash
 for package in "microk8s --classic" "helm --classic" "kubectl --classic" ; do sudo snap install $package; done
