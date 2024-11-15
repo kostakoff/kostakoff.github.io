@@ -7,5 +7,5 @@
 |[Help me with docker](/docks/help-me-with-docker.md)|-|-|-|-|
 |[Help me with Java](/docks/help-me-with-java.md)|-|-|-|-|
 
-
+[Ru.net alternatives](/docks/ru-alternatives.md) \
 It is a Kostakoff devops public notes https://kostakoff.github.io/
