@@ -9,7 +9,7 @@
 ### Steps
 - install apt tools
 ```bash
-sudo apt install git mc xca openjdk-11-jdk openjdk-17-jdk maven virtualenv ansible python3 nmap docker.io docker-compose skopeo terminator caffeine p7zip-full
+sudo apt install git mc xca openjdk-11-jdk openjdk-17-jdk maven virtualenv ansible python3 nmap docker.io docker-compose skopeo terminator caffeine p7zip-full gnome-screenshot
 ```
 - install snap tools
 ```bash
