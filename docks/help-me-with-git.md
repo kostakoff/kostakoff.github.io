@@ -6,6 +6,7 @@
 ```bash
 git config --global user.name "developer"
 git config --global user.name "developer@local"
+git config --global core.editor nano
 ```
 - generate ssh key for Git SCM
 ```bash
