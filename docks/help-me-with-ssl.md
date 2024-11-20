@@ -63,3 +63,39 @@ openssl rsautl -encrypt -in ./password.txt -out ./password.txt.enc -pubin -inkey
 ```bash
 openssl rsautl -decrypt -in ./password.txt.enc -out ./password2.txt -inkey ./key.pem
 ```
+
+## Certificate request temolate
+- create certificate request configuration ssl_req.conf
+```ini
+[req]
+default_bits = 2048
+prompt = no
+default_md = sha256
+req_extensions = req_ext
+distinguished_name = dn
+
+[dn]
+C = CA
+ST = BC
+L = VAN
+O = Local
+OU = Home
+CN = my.domain.local
+
+[req_ext]
+keyUsage = keyEncipherment, dataEncipherment
+extendedKeyUsage = serverAuth, clientAuth
+subjectAltName = @alt_names
+
+[alt_names]
+DNS.1 = my.domain.local
+DNS.2 = my2.dmain.local
+```
+- create certificate request file
+```bash
+openssl req -newkey rsa:2048  -nodes -sha256 -keyout key.pem -out req.csr -config ssl_req.conf
+```
+- verify csr
+```bash
+openssl req -text -noout -verify -in req.csr
+```
