@@ -10,8 +10,8 @@
             "Effect": "Allow",
             "Action": "iam:PassRole",
             "Resource": [
-                "arn:aws:iam::684618363085:role/eks-sa",
-                "arn:aws:iam::684618363085:instance-profile/eksNodeGroup-sa"
+                "arn:aws:iam::123456789:role/eks-sa",
+                "arn:aws:iam::123456789:instance-profile/eksNodeGroup-sa"
             ],
             "Condition": {
                 "StringEquals": {
@@ -22,4 +22,4 @@
     ]
 }
 ```
-> Where: arn:aws:iam::684618363085:role/eks-sa - role that we wanna grant to EKS cluster
+> Where: arn:aws:iam::123456789:role/eks-sa - role that we wanna grant to EKS cluster
