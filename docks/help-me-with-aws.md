@@ -24,6 +24,11 @@
 ```
 > Where: arn:aws:iam::123456789:role/eks-sa - role that we wanna grant to EKS cluster
 ## EKS
+- update kubeconfig
+```bash
+# rm -rf ~/.kube/config
+aws eks update-kubeconfig --region ca-central-1 --name lab-dev-k8s
+```
 - add root user or any other user to EKS
 > example of user.yaml
 ```yaml
