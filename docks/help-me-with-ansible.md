@@ -3,10 +3,11 @@
 ## ansible instllation
 - install through homebrew
 ```bash
-brew install ansible
+brew install ansible sshpass rsync
 ```
 - install through PIP
 ```bash
+brew install python3 sshpass rsync
 pip3 install ansible
 ```
 
