@@ -10,4 +10,5 @@
 |ERP|[MS Dinamics](https://www.microsoft.com/en-us/dynamics-365), [SAP](https://www.sap.com/products/erp/s4hana.html)|[1C Enterprice](https://1c-dn.com/)|
 |EMAIL|[Gmail](https://workspace.google.com/), [Outlook](https://outlook.com/)|[Yandex Mail](https://mail.yandex.ru/), [Mail.ru](https://mail.ru)|
 |Docker base images|[Registry RedHat](https://catalog.redhat.com/search?searchType=containers)|[Registry Astra](https://registry.astralinux.ru/latest/index.html)|
+|IDE|[VSCode](https://code.visualstudio.com/), [IntelliJ](https://www.jetbrains.com/idea/)|[SBER GigaIDE](https://gitverse.ru/services/gigaide)|
 |-|-|-|
