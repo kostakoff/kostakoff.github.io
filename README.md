@@ -6,6 +6,7 @@
 |[Help me with SSL](/docks/help-me-with-ssl.md)|[Help me with Kube Control](/docks/help-me-with-kube-control.md)|[Help me with python](/docks/help-me-with-python.md)|-|[Help me with AWS](./docks/help-me-with-aws.md)|
 |[Help me with docker](/docks/help-me-with-docker.md)|-|[Help me with ansible](./docks/help-me-with-ansible.md)|-|-|
 |[Help me with Java](/docks/help-me-with-java.md)|-|[Help me with brew](./docks/help-me-with-homebrew.md)|-|-|
+|-|-|[Help me with windows](./docks/help-me-with-windows.md)|-|-|
 
 [Ru.net alternatives](/docks/ru-alternatives.md) \
 It is a Kostakoff devops public notes https://kostakoff.github.io/

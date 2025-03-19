@@ -5,7 +5,7 @@
 - set user name and developer email (it not should be real name and real email)
 ```bash
 git config --global user.name "developer"
-git config --global user.name "developer@local"
+git config --global user.email "developer@local"
 git config --global core.editor nano
 ```
 - generate ssh key for Git SCM
